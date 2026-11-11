@@ -4,46 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     
     <script src="https://cdn.tailwindcss.com"></script>
-
-     <!-- <link rel="stylesheet" href="style.css"> -->
+    <script>
+        tailwind.config = {
+            theme: { extend: { fontFamily: { avatar: ["AvatarFont", "sans-serif"] } } }
+        }
+    </script>
 
     <title>Avatar: The Last Airbender</title>
 
-<style>
-  @font-face {
-    font-family: "AvatarFont";
-    src: url("./fonts/Avatar Airbender.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-  }
-  body {
-    font-family: "AvatarFont", sans-serif;
-    background-image: url("./Images/Avatar_background.jpg");
-  }
-</style>
-
-
 </head>
 
-
-
-
-
-<body class="bg-gray-900 text-white ">
+<body class="text-white font-avatar bg-gray-900">
 
 
     <header>
 
-    <div class="flex flex-row  items-center justify-between w-full p-4 bg-white-800 text-white">
+    <div class="flex flex-row  items-center justify-between w-full p-4 bg-gray-800 text-white">
             <img class ="h-auto w-24 " src="./Images/Avatar_Logo.png" alt="Avatar Last Airbender logo">
 
             <nav aria-label="main navigation"> 
             
             <ul class="flex flex-row  gap-6">
                 
-                <li><a href="#home" class="hover:text-green-400 @font-face ">The Story</a></li>
+                <li><a href="#home" class="hover:text-green-400">The Story</a></li>
 
                 <li><a href="#characters" class="hover:text-green-400">Characters</a></li>
 
@@ -60,10 +47,11 @@
 
 <main id="main">
 
-            <section id="home" class="p-8 max-w-4xl mx-auto text-center my-12">
-
-                <h1 class="text-4xl font-bold text-white-500">
-                Avatar The Last Airbender  
+            <section id="home" class="aspect-video w-full flex flex-col items-center justify-center p-8 text-center bg-no-repeat bg-contain bg-center bg-[url('./Images/hero-image.png')]">
+            
+                <section class="flex h-auto flex-col items-center justify-center bg-gray-800 bg-opacity-75 p-8 rounded-lg ">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                    Avatar: The Last Airbender 
                 </h1>
                 
                 <p>
@@ -74,7 +62,7 @@
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                 Non debitis natus praesentium pariatur nisi iure voluptatum aliquam odio dignissimos delectus tenetur voluptatem quos eum dolore a, culpa libero nihil incidunt.
                 </p>
-
+                </section>
             </section>
 
             <section class="py-16 px-6 max-w-4xl mx-auto text-center">
@@ -95,39 +83,37 @@
     <h1 class="text-4xl font-bold mb-2">Characters</h1>
     <h2 class="text-xl text-gray-300 mb-8">Meet the heroes of the Avatar world</h2>
     
-   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-    <!-- Katara -->
-    <div class="bg-gray-900 p-4 rounded-lg shadow-lg">
-    <img src="./Images/Katara.jpeg" alt="katara" class="w-full h-80 object-cover rounded-md">
-    <h3 class="text-xl font-bold">Katara</h3>
-    <p class="text-sm text-gray-400">Waterbender</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <!-- Katara -->
+        <div class="bg-gray-900 p-4 rounded-lg shadow-lg">
+            <img src="./Images/Katara.jpeg" alt="Katara" class="w-full h-80 object-cover rounded-md">
+            <h3 class="text-xl font-bold">Katara</h3>
+            <p class="text-sm text-gray-400">Waterbender</p>
+        </div>
+
+        <!-- Toph -->
+        <div class="bg-gray-900 p-4 rounded-lg shadow-lg">
+            <img src="./Images/Toph.jpeg" alt="Toph" class="w-full h-80 object-cover rounded-md">
+            <h3 class="text-xl font-bold">Toph</h3>
+            <p class="text-sm text-gray-400">Earthbender</p>
+        </div>
+
+        <!-- Zuko -->
+        <div class="bg-gray-900 p-4 rounded-lg shadow-lg">
+            <img src="./Images/Zuko.jpg" alt="Zuko" class="w-full h-80 object-cover rounded-md">
+            <h3 class="text-xl font-bold">Zuko</h3>
+            <p class="text-sm text-gray-400">Firebender</p>
+        </div>
+
+        <!-- Aang -->
+        <div class="bg-gray-900 p-4 rounded-lg shadow-lg">
+            <img src="./Images/Aang.webp" alt="Aang" class="w-full h-80 object-cover rounded-md">
+            <h3 class="text-xl font-bold">Aang</h3>
+            <p class="text-sm text-gray-400">The Avatar</p>
+        </div>
     </div>
 
-    
-    <!-- Toph -->
-    <div class="bg-gray-900 p-4 rounded-lg shadow-lg">
-    <img src="./Images/Toph.jpeg" alt="Toph" class="w-full h-80 object-cover rounded-md">
-    <h3 class="text-xl font-bold">Toph</h3>
-    <p class="text-sm text-gray-400">Earthbender</p>
-    </div>
-
-    
-    <!-- Zuko -->
-    <div class="bg-gray-900 p-4 rounded-lg shadow-lg">
-    <img src="./Images/Zuko.jpg" alt="Zuko" class="w-full h-80 object-cover rounded-md">
-    <h3 class="text-xl font-bold">Zuko</h3>
-    <p class="text-sm text-gray-400">Firebender</p>
-    </div>
-
-    <!-- Aang -->
-    <div class="bg-gray-900 p-4 rounded-lg shadow-lg">
-    <img src="./Images/Aang.webp" alt="Aang" class="w-full h-80 object-cover rounded-md">
-    <h3 class="text-xl font-bold">Aang</h3>
-    <p class="text-sm text-gray-400">The Avatar</p>
-    </div>
-    </div>
-
-</section>    
+</section>
 
     <section id="trailer">
             <h1>Trailer</h1>
@@ -158,12 +144,14 @@
 
         <p class="mx-auto mb-8 max-w-2xl text-gray-200">
             See the world of Avatar come to life on the big screen.
+        </p>
 
         <a href="#"
            class="inline-block rounded-full bg-blue-500 px-8 py-3 font-bold text-white hover:bg-blue-600">
             Buy Tickets
         </a>
     </div>
+    
     </section>
 
 
