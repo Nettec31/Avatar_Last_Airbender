@@ -3,56 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
     
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <script src="./script.js"></script>
+     <!-- <link rel="stylesheet" href="style.css"> -->
+
     <title>Avatar: The Last Airbender</title>
+
+<style>
+  @font-face {
+    font-family: "AvatarFont";
+    src: url("./fonts/Avatar Airbender.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+  body {
+    font-family: "AvatarFont", sans-serif;
+    background-image: url("./Images/Avatar_background.jpg");
+  }
+</style>
+
+
 </head>
 
-<body>
+
+
+
+
+<body class="bg-gray-900 text-white ">
 
 
     <header>
 
-        <div class="">
-        <img src="" alt="Avatar Last Airbender logo" >
+    <div class="flex flex-row  items-center justify-between w-full p-4 bg-white-800 text-white">
+            <img class ="h-auto w-24 " src="./Images/Avatar_Logo.png" alt="Avatar Last Airbender logo">
 
-        <nav role="navigation" aria-label="main navigation" class=""> 
-        
-        <ul>
+            <nav aria-label="main navigation"> 
             
-        <li><a href="#home">The Story</a></li>
+            <ul class="flex flex-row  gap-6">
+                
+                <li><a href="#home" class="hover:text-green-400 @font-face ">The Story</a></li>
 
-        <li><a href="#about">Characters</a></li>
+                <li><a href="#characters" class="hover:text-green-400">Characters</a></li>
 
-        <li><a href="#trailer">Trailer</a></li>
-        
-        </ul>
+                <li><a href="#trailer" class="hover:text-green-400">Trailer</a></li>
 
-        </nav>
-    </div> <!-- This line closes the <div> from line 19 -->
+                
+            <li><a href="#tickets" class = "hover:text-green-400 bg-blue-500 font-bold text-white py-2 px-4 rounded-full">Tickets</a></li>
+            
+            </ul>
+
+        </nav>   
+    </div> 
 </header>
 
-    <main id="main">
+<main id="main">
 
-<section id="home" class=""> 
+            <section id="home" class="p-8 max-w-4xl mx-auto text-center my-12">
 
-    <h1 class="text-4xl font-bold text-green-500">
-      Avatar Last Airbender  
-    </h1>
-    
-    <p>
-      Four Nations. One Destiny.  
-    </p>
-     
-    <p>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-    Non debitis natus praesentium pariatur nisi iure voluptatum aliquam odio dignissimos delectus tenetur voluptatem quos eum dolore a, culpa libero nihil incidunt.
-    </p>
+                <h1 class="text-4xl font-bold text-white-500">
+                Avatar The Last Airbender  
+                </h1>
+                
+                <p>
+                Four Nations. One Destiny.  
+                </p>
+                
+                <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Non debitis natus praesentium pariatur nisi iure voluptatum aliquam odio dignissimos delectus tenetur voluptatem quos eum dolore a, culpa libero nihil incidunt.
+                </p>
 
-</section>
+            </section>
 
 <section id="about" class="">
 
@@ -67,34 +90,36 @@
 </section>
 
 
-<section id="Characters">
+<section id="characters">
     <h1>Characters</h1>
     <h2>Meet the heroes of the Avatar world</h2>
     
-    <img src="./assets/katara.png" alt="katara">
-    <img src="./assets/toph.png" alt="Toph">
-    <img src="./assets/zuko.png" alt="Zuko">
-    <img src="./assets/aang.png" alt="Aang">
+    <img src="" alt="katara">
+    <img src="" alt="Toph">
+    <img src="" alt="Zuko">
+    <img src="" alt="Aang">
 
 
 </section>    
 
-<section id="trailer">
-    <h1>Trailer</h1>
-    <h2>A glimpse of the adventure</h2>
+    <section id="trailer">
+            <h1>Trailer</h1>
+            <h2>A glimpse of the adventure</h2>
+            
+            <video controls>
+                <source src="./assets/trailer.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <h3>The world that needs balance</h3>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Non debitis natus praesentium pariatur nisi iure voluptatum aliquam odio dignissimos delectus tenetur volu</p>
+
     
-    <video controls>
-        <source src="./assets/trailer.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    </section>
 
-    <h3>The world that needs balance</h3>
-
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-    Non debitis natus praesentium pariatur nisi iure voluptatum aliquam odio dignissimos delectus tenetur volu</p>
-
-
-    <section id="Tickets">
+    <section id="tickets">
         <h1>And don't forget to get your tickets for the premiere!</h1> 
         <h3>Get your tickets now</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
