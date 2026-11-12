@@ -4,112 +4,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
+   
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-            theme: { extend: { fontFamily: { avatar: ["AvatarFont", "sans-serif"] } } }
+            theme: { extend: { fontFamily: { avatar: ["AvatarFont", "sans-serif"] },
+            colors: {
+                 water: "#2f80c4",
+                 earth: "#6b8e3d",
+                 fire:  "#d9482b",
+                 air:   "#f2c94c",
+                 ink:   "#14181f", 
+                 cream: "#F9EFE3",
+                 sky:   "#B6D7F4",
+                 air2:   "#F4C135",
+                 fire2:  "#EE7223",
+                 ember: "#6E1700",
+                 earth2: "#715447"
+            } 
+          } 
         }
+    }
     </script>
 
     <title>Avatar: The Last Airbender</title>
 
 </head>
 
-<body class="text-white font-avatar bg-gray-900">
+<body class="text-cream font-avatar bg-ink">
 
 
-    <header>
+    <header class="bg-water/60 backdrop-blur-sm md:max-w-6xl md:mx-auto md:rounded-t-xl md:overflow-hidden">
 
-    <div class="flex flex-row  items-center justify-between w-full p-4 bg-gray-800 text-white">
-            <img class ="h-auto w-24 " src="./Images/Avatar_Logo.png" alt="Avatar Last Airbender logo">
-
-            <nav aria-label="main navigation"> 
+    <div class="grid grid-cols-2 sm:grid-cols-3 w-full p-4 items-center gap-2 bg-gradient-to-b from-black/50 to-transparent text-cream  border-b border-cream/20 shadow-lg">
+            <img class ="h-auto w-16 md:w-24" src="./Images/logo4.png" alt="Avatar Last Airbender logo">
             
-            <ul class="flex flex-row  gap-6">
-                
-                <li><a href="#home" class="hover:text-green-400">The Story</a></li>
 
-                <li><a href="#characters" class="hover:text-green-400">Characters</a></li>
-
-                <li><a href="#trailer" class="hover:text-green-400">Trailer</a></li>
-
-                
-            <li><a href="#tickets" class = "hover:text-green-400 bg-blue-500 font-bold text-white py-2 px-4 rounded-full">Tickets</a></li>
+            <nav aria-label="main navigation" class="col-span-2 order-last sm:col-span-1 sm:order-none justify-self-center">
             
+            <ul class=" [text-shadow:2px_2px_6px_rgba(0,0,0,0.7)] flex flex-row flex-wrap items-center justify-center gap-3 md:gap-6 text-sm sm:text-lg md:text-2xl">
+                
+                <li><a href="#synopsis" class="hover:text-fire">The Story</a></li>
+
+                <li><a href="#characters" class="hover:text-fire">Characters</a></li>
+
+                <li><a href="#trailer" class="hover:text-fire">Trailer</a></li>
+
             </ul>
 
         </nav>   
+            <a href="#tickets" class = " drop-shadow-lg hover:text-ink bg-water font-bold text-base md:text-xl text-cream py-2 px-4 rounded-full justify-self-end">Tickets</a>
     </div> 
 </header>
 
 <main id="main">
 
-            <section id="home" class="aspect-video w-full flex flex-col items-center justify-center p-8 text-center bg-no-repeat bg-contain bg-center bg-[url('./Images/hero-image.png')]">
-            
-                <section class="flex h-auto flex-col items-center justify-center bg-gray-800 bg-opacity-75 p-8 rounded-lg ">
-                <h1 class="text-4xl md:text-6xl font-bold mb-4">
+            <section id="home" class="w-full text-center md:aspect-video md:max-w-6xl md:mx-auto md:rounded-b-xl md:overflow-hidden md:flex md:flex-col md:items-center md:justify-center md:px-4 md:py-8 md:bg-no-repeat md:bg-cover md:bg-center md:bg-[linear-gradient(rgba(113,84,71,0.4),rgba(113,84,71,0.2)),url('./Images/hero-image.png')]">
+
+                
+                <div class="md:hidden aspect-video w-full bg-no-repeat bg-cover bg-center bg-[linear-gradient(rgba(113,84,71,0.25),rgba(113,84,71,0.25)),url('./Images/hero-image.png')]"></div>
+
+                <section class="flex h-auto flex-col items-center justify-center bg-fire2/10  mx-4 my-6 md:mx-0 md:my-0 p-6 md:p-8 rounded-lg md:max-w-xl">
+                <h1 class=" [text-shadow:2px_2px_6px_rgba(0,0,0,0.7)] text-3xl md:text-6xl font-normal mb-4">
                     Avatar: The Last Airbender 
                 </h1>
                 
-                <p>
+                <h3 class=" [text-shadow:2px_2px_6px_rgba(0,0,0,0.7)] text-xl md:text-2xl  mb-6 text-slate-300 tracking-wide shadow-lg bg-earth2/50  p-2 rounded-lg">
                 Four Nations. One Destiny.  
-                </p>
+                </h3>
                 
-                <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Non debitis natus praesentium pariatur nisi iure voluptatum aliquam odio dignissimos delectus tenetur voluptatem quos eum dolore a, culpa libero nihil incidunt.
-                </p>
+                <p class="[text-shadow:2px_2px_6px_rgba(0,0,0,0.7)] ">The Fire Nation wants to conquer the world, but the only bender who has enough power, the Avatar, has disappeared... until now. </p>
                 </section>
             </section>
 
-            <section class="py-16 px-6 max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl md:text-5xl font-extrabold text-cyan-400 mb-6 tracking-wide">
+            <section id="synopsis" class="w-full md:max-w-6xl md:mx-auto py-16 px-6  text-center bg-earth2/20 rounded-lg shadow-lg md:my-12 [text-shadow:1px_2px_4px_rgba(0,0,0,0.8)]">
+              <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-5xl text-air mb-6 tracking-wide [text-shadow:2px_2px_6px_rgba(0,0,0,0.7)]">
                     Synopsis
                 </h2>
-                
-                <p class="text-lg md:text-xl text-slate-300 leading-relaxed">
-                    In a lush alien world called Pandora, a disabled former marine is sent on a unique mission. 
-                    Torn between following orders and protecting an alien civilization that feels like home, 
-                    he must make the ultimate choice in an epic battle for survival.
+
+                <p class="text-lg md:text-xl text-cream leading-relaxed mb-10">
+                    Avatar: The Last Airbender follows a young boy named Aang, who must master all
+                    four classical elements to save a war-torn world from the tyrannical Fire Nation.
                 </p>
+
+                <h3 class="text-2xl md:text-3xl text-sky mb-4 [text-shadow:2px_2px_6px_rgba(0,0,0,0.7)]">The Premise</h3>
+                <p class="text-base md:text-lg text-cream leading-relaxed mb-10">
+                    The world is divided into four nations based on the elements: the Water Tribes,
+                    the Earth Kingdom, the Fire Nation, and the Air Nomads. In each generation, one
+                    person is born with the ability to control all four elements and maintain balance
+                    between the nations. This person is known as the Avatar.
+                </p>
+
+                <h3 class="text-2xl md:text-3xl text-sky mb-4 [text-shadow:2px_2px_6px_rgba(0,0,0,0.7)]">The Story</h3>
+                <ul class="space-y-4 text-left text-base md:text-lg text-cream leading-relaxed">
+                    <li><span class="text-air">The Awakening:</span> After being frozen in an iceberg for 100 years, 12-year-old Air Nomad Aang is discovered by two Water Tribe siblings, Katara and Sokka. Aang learns that during his absence, the Fire Nation launched a brutal war to conquer the world and wiped out his people, making him the last surviving airbender.</li>
+                    <li><span class="text-air">The Journey:</span> Still possessing a playful, carefree spirit, Aang must accept his destiny. Alongside Katara, Sokka, and his loyal flying bison Appa, Aang travels across the globe to find teachers who can help him master Waterbending, Earthbending, and Firebending before a celestial event gives the Fire Lord unstoppable power.</li>
+                    <li><span class="text-air">Pursuit and Redemption:</span> Throughout their journey, the group is relentlessly hunted by Prince Zuko, a banished Fire Nation royal desperate to capture the Avatar to restore his honor. As the series progresses, Zuko's own internal struggle becomes central to the story, alongside his wise uncle, Iroh.</li>
+                </ul>
+              </div>
 
             </section>
 
 
-<section id="characters" class="p-8 max-w-6xl mx-auto text-center my-12">
+<section id="characters" class="p-8 max-w-6xl mx-auto text-center bg-water/20 my-12 [text-shadow:1px_2px_4px_rgba(0,0,0,0.8)]">
     <h1 class="text-4xl font-bold mb-2">Characters</h1>
     <h2 class="text-xl text-gray-300 mb-8">Meet the heroes of the Avatar world</h2>
     
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         <!-- Katara -->
-        <div class="bg-gray-900 p-4 rounded-lg shadow-lg">
+        <div class="bg-water/30 p-4 rounded-lg shadow-lg">
             <img src="./Images/Katara.jpeg" alt="Katara" class="w-full h-80 object-cover rounded-md">
             <h3 class="text-xl font-bold">Katara</h3>
-            <p class="text-sm text-gray-400">Waterbender</p>
+            <p class="text-sm text-cream">Waterbender</p>
         </div>
 
         <!-- Toph -->
-        <div class="bg-gray-900 p-4 rounded-lg shadow-lg">
+        <div class="bg-earth/30 p-4 rounded-lg shadow-lg">
             <img src="./Images/Toph.jpeg" alt="Toph" class="w-full h-80 object-cover rounded-md">
             <h3 class="text-xl font-bold">Toph</h3>
-            <p class="text-sm text-gray-400">Earthbender</p>
+            <p class="text-sm text-cream">Earthbender</p>
         </div>
 
         <!-- Zuko -->
-        <div class="bg-gray-900 p-4 rounded-lg shadow-lg">
+        <div class="bg-fire/70 p-4 rounded-lg shadow-lg">
             <img src="./Images/Zuko.jpg" alt="Zuko" class="w-full h-80 object-cover rounded-md">
             <h3 class="text-xl font-bold">Zuko</h3>
-            <p class="text-sm text-gray-400">Firebender</p>
+            <p class="text-sm text-cream">Firebender</p>
         </div>
 
         <!-- Aang -->
-        <div class="bg-gray-900 p-4 rounded-lg shadow-lg">
+        <div class="bg-air2/40 p-4 rounded-lg shadow-lg">
             <img src="./Images/Aang.webp" alt="Aang" class="w-full h-80 object-cover rounded-md">
             <h3 class="text-xl font-bold">Aang</h3>
-            <p class="text-sm text-gray-400">The Avatar</p>
+            <p class="text-sm text-cream">The Avatar</p>
         </div>
     </div>
 
@@ -164,7 +192,7 @@
         <div class="max-w-4xl mx-auto space-y-6">
             
             <h3 class="text-2xl font-bold tracking-widest text-cyan-400 uppercase">
-                Avatar-Pandora Experience
+                Avatar Experience
             </h3>
 
             <div class="flex justify-center space-x-6 text-sm font-medium">
@@ -175,8 +203,7 @@
             </div>
 
             <p class="text-xs text-slate-500 max-w-2xl mx-auto leading-relaxed">
-                Rated PG-13 for intense sequences of sci-fi action and violence, and some language. 
-                Experience Pandora in IMAX 3D and Dolby Cinema.
+                Rated PG-13 
             </p>
 
             <p class="text-xs text-slate-600 border-t border-slate-800 pt-4">
