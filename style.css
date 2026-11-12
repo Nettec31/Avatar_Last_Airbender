@@ -1,21 +1,6 @@
-
-/* @import "tailwindcss";
-
- @font-face {
+@font-face {
     font-family: "AvatarFont";
-    src: url("./fonts/Avatar Airbender.woff") format("woff");
+    src: url("./fonts/AvatarAirbender.woff") format("woff");
     font-weight: 400;
     font-style: normal;
-  }
-
-  body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    background-image: url("./Images/Avatar-background.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-} 
-  
+}
