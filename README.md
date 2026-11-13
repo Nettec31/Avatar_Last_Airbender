@@ -17,15 +17,25 @@ Our team designed and developed this promotional web page to deliver an immersiv
 
 ## 👥 The Team
 | Name | Role |
-| **Lynnette** | Project Manager |
-| **Mohammed** | HTML Developer |
-| **Kehila** | CSS Developer |
-| **Rahie** | UX/UI Designer |
-| **Colin** | QA Developer |
+
+**Lynnette**: Project Manager 
+
+**Mohammed**: HTML Developer 
+
+**Kehila**: CSS Developer 
+
+**Rahie**: UX/UI Designer 
+
+**Colin**: QA Developer 
+
 | **Project Manager** | Organized tasks, scheduled checkpoints, and managed the [Trello board](https://trello.com/b/EG5dpqxW/movie-website-challenge#trello-board-root). |
+
 | **UX/UI Designer** | Curated the element-inspired color palette, layout structure, and wireframing. |
+
 | **HTML Developer** | Built clean, semantic HTML structure and sections. |
+
 | **CSS Developer** | Implemented visual styling, layout positioning, and responsive design with Tailwind. |
+
 | **QA Developer** | Tested functionality, handled interactivity, and ensured cross-device compatibility. |
 
 *Developed collaboratively for the Movie Website Challenge (Animation Category).*
